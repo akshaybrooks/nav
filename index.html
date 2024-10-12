@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+  </head>
+  <body>
+    <section>
+      <nav class="navbar">
+        <div><a href="#" class="navbar__logo">
+          <i class="ri-bilibili-line"></i> Logo.</a></div>
+        <div class="sidebar">
+          <div class="closing-btn"><i class="ri-bilibili-line"></i><a href="#"><i onclick="hideSidebar()" class="ri-close-line"></i></a></div>
+          <a href="#" class="navbar__link-toggle">Games</a>
+          <a href="#" class="navbar__link-toggle">News</a>
+          <a href="#" class="navbar__link-toggle">About</a>
+          <a href="#" class="navbar__link-toggle">More</a>
+          <a href="#" class="navbar__link-toggle">Media</a>
+        </div>
+        <div class="navbar__menu">
+          <a href="#" class="navbar__link">Home</a>
+          <a href="#" class="navbar__link">Games</a>
+          <a href="#" class="navbar__link">Media</a>
+          <a href="#" class="navbar__link">About</a>
+          <a href="#" class="navbar__link">Socials</a>
+          <a href="#" class="navbar__link">News</a>
+          <a href="#" class="navbar__link">More</a>
+        </div>
+        <div class="navbar__toggles">
+        <div class="open-btn" onclick=showSidebar()><a href="#"><i class="ri-menu-line"></i></a></div>
+        <!-- <button class="btn">Email</button> -->
+      </div>
+      </nav>
+    </section>
+    <section>
+      <div class="video">
+        <video class="video-bg" autoplay muted loop>
+          <source src="./fancy.mp4"video/mp4">
+        </video>
+      </div>
+    </section>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
