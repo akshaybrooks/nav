@@ -141,7 +141,7 @@ video {
     display: block;
   }
   .video-bg{
-    height: 85vh;
+    height: 65vh;
   }
 }
 @media screen and (max-width: 500px){
